@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ORA | Codificador de Texto</title>
+</head>
+<body>
+    <nav>
+        <img id="logo" src="img/alura.png" alt="Logo da Alura">
+    </nav>
+    
+    <main>
+        <div class="campo" id="entrada">
+            <textarea id="text-entrada" placeholder="Digite seu texto" autofocus></textarea>
+            <ul id="erros">
+                <li id="link-msg"></li>
+            </ul>
+            <div class="botoes">
+                <button id="btn-criptografar" class="bloqueado">Criptografar</button>
+                <button id="btn-descriptografar" class="bloqueado">Descriptografar</button>
+            </div>
+        </div>
+        <div class="campo" id="resultado">
+            <textarea id="text-resultado" readonly></textarea>
+            <ul id="alerta-copiar-btn">
+                <li id="copiar-texto"></li>
+            </ul>
+            <div class="botoes">
+                <button id="btn-copiar" class="bloqueado">Copiar</button>
+                <button id="btn-limpar" class="bloqueado">Limpar</button>
+            </div>
+        </div>
+    </main>
+    <script src="cripto.js"></script>
+</body>
+</html>
